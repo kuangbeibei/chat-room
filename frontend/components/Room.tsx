@@ -31,13 +31,13 @@ const Room: FC<{ currentUser: string, client: any }> = ({ currentUser, client })
 
 	return (
 		<div className="px-2 pt-2 h-full">
-			<div className="p-2 overflow-y-auto h-4/5 text-white text-xs font-thin">
+			<div className="p-2 overflow-y-auto h-4/5 text-white text-sm font-thin">
 				<ul className="flex flex-col gap-5">
-					{conversations.map(({ username, content }, index) => {
+					{conversations && conversations.map(({ username, content }, index) => {
 						if (currentUser === username) {
 							return (
 								<li key={index} className="self-end w-3/4">
-									<div className="flex flex-row-reverse align-top justify-start">
+									<div className="flex flex-row-reverse align-top justify-start gap-2">
 										<p> :{username}</p>
 										<p>{content} </p>
 									</div>
@@ -47,7 +47,7 @@ const Room: FC<{ currentUser: string, client: any }> = ({ currentUser, client })
 							return (
 								<li key={index} className="w-3/4 self-start">
 									{
-										<div className="flex align-top">
+										<div className="flex align-top gap-2">
 											<p>{username} : </p>
 											<p> {content}</p>
 										</div>

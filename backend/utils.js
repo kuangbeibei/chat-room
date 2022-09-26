@@ -36,17 +36,25 @@ exports.defaultDoors = [
     },
 ];
 
-exports.conversations = [
-    {
-        username: 'kk',
-        content: '你好呀',
-    },
-    {
-        username: 'laobai',
-        content: '喵喵'
-    },
-    {
-        username: 'feifei',
-        content: '如果文字多了就会溢出来, 如果文字多了就会溢出来, 如果文字多了就会溢出来,如果文字多了就会溢出来,如果文字多了就会溢出来,如果文字多了就会溢出来,如果文字多了就会溢出来,如果文字多了就会溢出来'
-    }
-]
+exports.conversations = {
+    'room1': [
+        {
+            username: 'Dan Kuang',
+            content: 'Hey, this is a chat room where you can send messages with anyone instantly. There are seveal rules that you should follow: 1. Treat everyone with respect. 2. No spam or promotions. 3. Do not post the same message in multiple channels. 4. Ask any questions in this lobby room as it serves as a customer service.'
+        }
+    ],
+    'room2': [
+        {
+            username: '大卫',
+            content: '摆造型',
+        },
+        {
+            username: '蜡笔小星',
+            content: '看美女姐姐',
+        },
+        {
+            username: '老白',
+            content: '睡觉',
+        }
+    ],
+}

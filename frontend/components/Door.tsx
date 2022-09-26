@@ -37,7 +37,7 @@ const Door: FC<{ client: any }> = ({ client }) => {
 						<div
 							onClick={() => handleRoomClick(item.id)}
 							key={item.id}
-							className="relative flex gap-2 items-center content-center h-12 overflow-hidden py-1 box-border bg-contentBgColor rounded-sm cursor-pointer border-b-1 group"
+							className="relative flex gap-2 items-center content-center h-12 overflow-hidden py-1 pr-2 box-border bg-contentBgColor rounded-sm cursor-pointer border-b-1 group"
 						>
 							<div
 								className={`group-hover:block hidden absolute -z-10 border-b-2 w-full h-full animate-[emergeFromLeft_.3s_ease-in-out]`}
