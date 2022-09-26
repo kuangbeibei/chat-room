@@ -1,0 +1,12 @@
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "username": "kk"
+}
+
+###
+
+POST http://localhost:3000/login
+
+
